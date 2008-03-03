@@ -9,8 +9,10 @@
 // ==/UserScript==
 
 function refreshTwitter() { 
-	if($F('status') == '') window.location.reload();
-	else setTimeout(refreshTwitter, 30000);
+	if($$('.wrapper').first().cumulativeScrollOffset()[1] > 90) return setTimeout(refreshTwitter, 30000);
+	if($F('status') != '') return setTimeout(refreshTwitter, 30000);
+	
+	window.location.reload();
 }
 
 (function() {
@@ -25,5 +27,6 @@ function refreshTwitter() {
 	$('status').setStyle({width: '90%'});
 	$$('.bar').first().down('h3').down('label').setStyle({padding: 0});
 	$$('.badge').first().hide();
+	
 	setTimeout(refreshTwitter, 30000);
 })();
