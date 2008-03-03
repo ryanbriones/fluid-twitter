@@ -1,0 +1,29 @@
+Fluid Twitter
+===============
+
+A Userscript for Fluid that streamlines the twitter interface to
+make it usable in a flexible (but mostly thin) Fluid instance
+
+
+Installation
+===============
+(Assuming you've already downloaded Fluid from Fluidapp.com)
+
+1. Create a new Fluid SSB
+-- URL: http://twitter.com/home (you could also use http://twitter.com/username, but home will redirect you to the login as neccesary)
+2. Run the Fluid SSB you just created
+3. In the menu, navigate to Userscripts -> Open Userscripts Folder
+4. Paste fluid_twitter.user.js into the SSB's Userscript folder
+5. In the menu of your SSB navigate to Userscripts -> Reload All Userscripts
+6. Navigate to Userscripts -> Fluid Twitter to toggle it's enablement (is that a word?)
+7. Use Cmd-R to reload SSB window
+
+You Win!
+
+Cavaets
+===============
+* As of FluidInstance 0.8.2, SSB's will not persist the enablement of your Userscripts. Translation: you will have to enable Fluid Twitter every time you open your SSB
+
+TODO
+===============
+* Have Fluid Twitter to a JSON request to see if your friends timeline has been updated before reloading the window.
