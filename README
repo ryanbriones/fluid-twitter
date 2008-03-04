@@ -10,7 +10,7 @@ Installation
 (Assuming you've already downloaded Fluid from Fluidapp.com)
 
 1. Create a new Fluid SSB
--- URL: http://twitter.com/home (you could also use http://twitter.com/username, but home will redirect you to the login as neccesary)
+-- URL: http://twitter.com/home (you could also use http://twitter.com/username, but home will redirect you to the login as necessary)
 2. Run the Fluid SSB you just created
 3. In the menu, navigate to Userscripts -> Open Userscripts Folder
 4. Paste fluid_twitter.user.js into the SSB's Userscript folder
@@ -20,10 +20,10 @@ Installation
 
 You Win!
 
-Cavaets
+Caveats
 ===============
 * As of FluidInstance 0.8.2, SSB's will not persist the enablement of your Userscripts. Translation: you will have to enable Fluid Twitter every time you open your SSB
 
 TODO
 ===============
-* Have Fluid Twitter to a JSON request to see if your friends timeline has been updated before reloading the window.
+* Have Fluid Twitter to a JSON request to see if your friends timeline has been updated before reloading the window. This will require a way to persist username (and possibly password).
